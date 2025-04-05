@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MADE BY MARIANA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/w3.css">
+<style>
+
+  body {
+    background-image: url('./img/background.jpg'); /* Replace with the actual path to your image */
+    background-size: cover; /* Scale the image to cover the entire background */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Optional: Keep the background fixed while scrolling */
+  }
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+    gap: 20px; /* Adjust gap as needed */
+    justify-items: center; /* Center items horizontally in each grid cell */
+    align-items: center; /* Center items vertically in each grid cell */
+  }
+
+  .image-grid-item {
+    border: 5px solid #566B30; /* Add a green border */
+    overflow: hidden; /* Clip content that overflows the fixed size */
+    width: 100%; /* Set a fixed width */
+    height: 100%; /* Set a fixed height (adjust as needed) */
+    display: flex; /* Use flexbox to center the image inside */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-grid-item img {
+    max-width: 100%; /* Ensure image doesn't exceed the container */
+    max-height: 100%; /* Ensure image doesn't exceed the container */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+  }
+
+  #portfolio {
+    display: flex;
+    justify-content: center; /* Center the grid horizontally on the page */
+    margin-top: 20px; /* Add some top margin to separate from the header */
+  }
+
+  #portfolio > div {
+    width: 90%; /* Adjust the width of the container for the grid */
+    max-width: 600px; /* Set a maximum width for the grid container */
+  }
+</style>
+</head>
+<body>
+
+<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+  <img class="w3-image w3-round" src="./img/solid-color-image.png" alt="Me" width="1000" height="500">
+  <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
+    <h1 class="w3-hide-medium w3-hide-small w3-xxlarge" style="font-family: MedioFont;">MADE BY MARIANA</h1>
+    <h2 class="w3-hide-large" style="font-family: MedioFont; white-space:nowrap">MADE BY MARIANA</h2>
+    <h3 class="w3-hide-medium w3-hide-small">DESIGNS</h3>
+  </div>
+
+  <div class="w3-bar w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px; background-color: #f7d3b7;" >
+    <a href="#" class="w3-bar-item w3-button">Home</a>
+    <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+  </div>
+</header>
+
+<div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
+<div class="w3-bar w3-light-grey">
+  <a href="#" class="w3-bar-item w3-button">Home</a>
+  <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
+  <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+</div>
+</div>
+
+<div class="w3-content w3-padding-large w3-margin-top">
+
+  <div id="portfolio">
+    <div>
+      <div class="image-grid">
+        <div class="image-grid-item">
+          <img src="./img/img1.png" alt="Wedding Invitation" class="w3-image">
+        </div>
+        <div class="image-grid-item">
+          <img src="./img/img2.webp" alt="Ocean II" class="w3-image">
+        </div>
+        <div class="image-grid-item">
+          <img src="./img/img3.webp" alt="Ocean II" class="w3-image">
+        </div>
+        <div class="image-grid-item">
+          <img src="./img/img4.webp" alt="Ocean II" class="w3-image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-padding-large w3-padding-32 w3-margin-top" id="contact" style="background-color: #f7d3b7;">
+    <h3 class="w3-center">Contact</h3>
+    <hr>
+    <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus.</p>
+
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" required name="Name">
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" required name="Email">
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" required name="Message">
+      </div>
+      <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
+    </form><br>
+
+  </div>
+
+</div>
+
+</body>
+</html>
