@@ -5,6 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="./css/w3.css">
+<link rel="stylesheet" href="./css/style.css">
 <style>
 
   body {
@@ -80,20 +81,27 @@
 
 <div class="w3-content w3-padding-large w3-margin-top">
 
+	<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
   <div id="portfolio">
     <div>
       <div class="image-grid">
         <div class="image-grid-item">
-          <img src="./img/img1.png" alt="Wedding Invitation" class="w3-image">
+          <img class="myImg" src="./img/img1.png" alt="Wedding Invitation">
         </div>
         <div class="image-grid-item">
-          <img src="./img/img2.webp" alt="Ocean II" class="w3-image">
+          <img class="myImg w3-image" src="./img/img2.webp" alt="Ocean II">
         </div>
         <div class="image-grid-item">
-          <img src="./img/img3.webp" alt="Ocean II" class="w3-image">
+          <img class="myImg w3-image" src="./img/img3.webp" alt="Ocean II">
         </div>
         <div class="image-grid-item">
-          <img src="./img/img4.webp" alt="Ocean II" class="w3-image">
+          <img class="myImg w3-image" src="./img/img4.webp" alt="Ocean II">
         </div>
       </div>
     </div>
@@ -123,6 +131,6 @@
   </div>
 
 </div>
-
+<script src="./scripts/script.js"></script>
 </body>
 </html>
